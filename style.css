@@ -1,0 +1,91 @@
+/*Tausta ja containerit*/
+body{
+    background: gray;
+}
+#container{
+    padding:10px;
+    background: #2f2f2f;
+    margin: 20px;
+}
+#footer-container{
+    padding:10px;
+    background: #2f2f2f;
+    margin: 20px;
+}
+
+/*Header*/
+header{
+    text-align:center;
+}
+header img{
+    max-width: 100%;
+}
+
+/*Menu*/
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    background: #959595;
+    list-style-type: none;
+}
+#menu li{
+    padding: 5px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+#menu a:hover{
+    color: white;
+    mix-blend-mode: difference;
+}
+#dropdown{
+    display: none;
+    position: absolute;
+    background-color: #8d8d8d;
+    padding: 5px;
+}
+#dropdown-link:hover #dropdown{
+    display: block;
+}
+
+/*Article*/
+article{
+    display: flex;
+    flex-wrap: wrap;
+    background: #959595;
+    padding: 20px;
+}
+article h2{
+    width: 100%;
+}
+article p{
+    text-align: justify;
+    line-height: 1.25em;
+    width: 70%;
+}
+
+article img{
+    padding: 20px;
+    width: 360px;
+    height: auto;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+#socialmedia{
+    margin: auto;
+}
+footer h4{
+    width: 100%;
+    text-align: center;
+}
+footer img{
+    max-height: 50px;
+    width: auto;
+    padding: 5px;
+    margin-right: 50px;
+}
