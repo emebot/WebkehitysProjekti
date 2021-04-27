@@ -1,6 +1,7 @@
 /*Tausta ja containerit ja muut yleiset*/
 body{
     background: gray;
+    font-family: Chivo, sans-serif;
 }
 #container{
     padding:10px;
@@ -13,8 +14,12 @@ body{
     margin: 20px;
 }
 p{
+    font-family: Chivo, sans-serif;
     text-align: justify;
     line-height: 1.25em;
+}
+h1,h2,h3,h4{
+    font-family: Overpass, sans-serif;
 }
 /*Header*/
 header{
