@@ -84,7 +84,7 @@ footer{
 #socialmedia{
     margin: auto;
 }
-footer h4{
+footer h1,h2,h3,h4{
     width: 100%;
     text-align: center;
 }
