@@ -51,26 +51,25 @@ header img{
 
 /*Article*/
 article{
-    display: flex;
-    flex-wrap: wrap;
     background: #959595;
     padding: 20px;
 }
-article h2{
-    width: 100%;
-}
-article p{
+.flex-article p{
     text-align: justify;
     line-height: 1.25em;
     width: 70%;
 }
-
 article img{
     padding: 20px;
     width: 360px;
     height: auto;
 }
-
+.flex-article{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
 /*Footer*/
 footer{
     display: flex;
@@ -88,4 +87,10 @@ footer img{
     width: auto;
     padding: 5px;
     margin-right: 50px;
+}
+
+/*Tietoja sivu*/
+.muotokuva{
+    width: 175px;
+    height: 300px;
 }
