@@ -1,4 +1,4 @@
-/*Tausta ja containerit*/
+/*Tausta ja containerit ja muut yleiset*/
 body{
     background: gray;
 }
@@ -12,7 +12,10 @@ body{
     background: #2f2f2f;
     margin: 20px;
 }
-
+p{
+    text-align: justify;
+    line-height: 1.25em;
+}
 /*Header*/
 header{
     text-align:center;
@@ -55,8 +58,6 @@ article{
     padding: 20px;
 }
 .flex-article p{
-    text-align: justify;
-    line-height: 1.25em;
     width: 70%;
 }
 article img{
@@ -92,5 +93,5 @@ footer img{
 /*Tietoja sivu*/
 .muotokuva{
     width: 175px;
-    height: 300px;
+    height: 250px;
 }

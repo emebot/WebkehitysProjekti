@@ -5,6 +5,73 @@
     <title>About</title>
 </head>
 <body>
-Tänne tiedot tekijöistä. Voisi myös tehdä sen karttaintegraation, jossa näkyy metropolia karamalmin kampus?
+<!--Tän voi varmaa kopsata jokaselle sivulle-->
+<div id="container">
+    <header>
+        <a href="index.html"><img src="../media/img/logo.png"></a>
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" rel="stylesheet">
+    </header>
+
+    <nav>
+        <ul id="menu">
+            <li><a href="index.html">Koti</a></li>
+            <li id="dropdown-link">
+                Pelit
+                <i class="fa fa-caret-down"></i><!--Hieno nuoli tossa Games painikkeen vieressä-->
+                <div id="dropdown">
+                    esim.<br>
+                    <a href="">GTA San Andreas</a><br>
+                    <a href="">NFS Most Wanted</a>
+                </div>
+            </li>
+            <li><a href="about.html">Tietoja</a></li>
+            <li><a href="findmoregames.html">Löydä lisää pelejä</a></li>
+        </ul>
+    </nav>
+    <!--Tän voi varmaa kopsata jokaselle sivulle-->
+    <article>
+        <h2>Tietoja</h2>
+        <p>Olemme kolme opiskelijaa Metropolia Ammattikorkeakoulusta Karamalmin kampukselta. Teimme tämän sivun projektiksi ensimmäisen vuoden media-projektia varten.</p>
+        <div class="flex-article">
+            <figure>
+                <img src="../media/img/placeholder.jpg" alt="" class="muotokuva">
+                <figcaption>Tino Paajanen</figcaption>
+            </figure>
+            <figure>
+                <img src="../media/img/placeholder.jpg" alt="" class="muotokuva">
+                <figcaption>Eemeli Kaski</figcaption>
+            </figure>
+            <figure>
+                <img src="../media/img/placeholder.jpg" alt="" class="muotokuva">
+                <figcaption>Joakim Äikiä</figcaption>
+            </figure>
+            <div id="map" style="width: 40%; height: 400px;"></div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+
+            <script>
+              'use strict'
+              const map = L.map('map').setView([60, 25], 5);
+              map.flyTo([60.2238, 24.758], 17)
+              L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+              }).addTo(map);
+            </script>
+        </div>
+    </article>
+</div>
+<!--Ja tän voi varmaa kopsata jokaselle sivulle-->
+<div id="footer-container">
+    <footer>
+        <h4>Find us on</h4>
+        <div id="socialmedia">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="../media/img/youtube.png"></a>
+            <a href="" target="_blank"><img src="../media/img/twitter.png"></a>
+            <a href="" target="_blank"><img src="../media/img/facebook.png"></a>
+            <a href="https://github.com/emebot/WebkehitysProjekti" target="_blank"><img src="../media/img/github.png"></a>
+        </div>
+    </footer>
+</div>
+<!--Ja tän voi varmaa kopsata jokaselle sivulle-->
 </body>
 </html>
