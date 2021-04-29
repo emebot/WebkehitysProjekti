@@ -63,7 +63,7 @@ article{
     padding: 20px;
 }
 .flex-article p{
-    width: 70%;
+    width: 50%;
 }
 article img{
     padding: 20px;
@@ -99,6 +99,68 @@ footer img{
 .muotokuva{
     width: 175px;
     height: 250px;
+}
+
+
+
+
+.flex-container {
+    position: fixed;
+    right: 5vh;
+    top: 20vh;
+    width: 30vh;
+    height: 100vh;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+
+.flex-container > p {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    left: 40px;
+    color: white;
+}
+
+.flex-container > div {
+
+    position: relative;
+    width: 30vh;
+    height: 15vh;
+}
+
+.flex-container > div > a {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+.flex-container > div > figure > a > img {
+    width: 30vh;
+    height: auto;
+    position: relative;
+
+}
+
+.flex-container > div > figure > figcaption {
+    position: relative;
+    color: white;
+    width: 30vh;
+    bottom: 17vh;
+    left: 0.5vh;
+}
+
+@media only screen and (max-width: 1300px) {
+    .flex-container {
+        position: static;
+        width: 1000px;
+    }
+
+    .flex-container > p {
+        width: 30vh;
+    }
 }
 
 
