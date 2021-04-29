@@ -62,19 +62,21 @@ article{
     background: #959595;
     padding: 20px;
 }
-.flex-article p{
-    width: 70%;
-}
 article img{
     padding: 20px;
-    width: 360px;
-    height: auto;
+    max-width: 360px;
+    max-height: 200px;
 }
 .flex-article{
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+@media only screen and (max-width: 1200px){
+    .flex-article{
+        flex-wrap: wrap;
+    }
 }
 /*Footer*/
 footer{
@@ -101,5 +103,12 @@ footer img{
     height: 250px;
 }
 
-
-
+/*Koodi sivut*/
+.taulukko, .taulukko td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: #b7b7b7;
+}
+.taulukko td{
+    padding: 10px;
+}
