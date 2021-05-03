@@ -114,6 +114,30 @@ footer img{
     padding: 10px;
 }
 
+div p {
+    max-width: 60%;
+    margin-right: 2vh;
+}
+
+div embed {
+    max-width: 30%;
+    height: auto;
+}
+
+.random a {
+    margin: 20px;
+}
+
+.random audio {
+
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.random p {
+
+    margin-left: 20px;
+}
 
 
 .flex-container {
@@ -192,6 +216,14 @@ nav {
     }
     article{
         width: auto;
+    }
+
+    article div p {
+        max-width: 100%;
+    }
+
+    article div embed {
+        max-width: 100%;
     }
 
     .img-container {
