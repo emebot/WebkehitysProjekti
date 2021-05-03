@@ -114,6 +114,8 @@ footer img{
     padding: 10px;
 }
 
+
+
 .flex-container {
     position: fixed;
     right: 5vh;
@@ -124,7 +126,7 @@ footer img{
     flex-wrap: wrap;
 }
 
-.flex-container > p {
+.flex-container p {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -132,14 +134,14 @@ footer img{
     color: white;
 }
 
-.flex-container > div {
+.flex-container div {
 
     position: relative;
     width: 30vh;
     height: 15vh;
 }
 
-.flex-container > div > a {
+.flex-container div a {
     position: relative;
     width: 100%;
     height: auto;
@@ -147,14 +149,14 @@ footer img{
     left: 0;
 }
 
-.flex-container > div > figure > a > img {
+.flex-container div figure a img {
     width: 30vh;
     height: auto;
     position: relative;
 
 }
 
-.flex-container > div > figure > figcaption {
+.flex-container div figure figcaption {
     position: relative;
     color: white;
     width: 30vh;
@@ -168,7 +170,7 @@ footer img{
         width: 1000px;
     }
 
-    .flex-container > p {
+    .flex-container p {
         width: 30vh;
     }
     article{
