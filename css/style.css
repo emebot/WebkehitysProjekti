@@ -77,9 +77,17 @@ article img{
     display: flex;
     flex-wrap: nowrap;
 }
+#videonvieressaolevateksti{
+    max-width: 60%;
+    margin-right: 2vh;
+}
 @media only screen and (max-width: 1200px) {
     .flex-article {
         flex-wrap: wrap;
+    }
+    #videonvieressaolevateksti{
+        max-width: 100%;
+        width: auto;
     }
 }
 /*Footer*/
@@ -120,10 +128,7 @@ footer img{
     padding: 10px;
 }
 
-div p {
-    max-width: 60%;
-    margin-right: 2vh;
-}
+
 
 div embed {
     max-width: 30%;
