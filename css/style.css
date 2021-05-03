@@ -118,8 +118,8 @@ footer img{
 
 .flex-container {
     position: fixed;
-    right: 5vh;
-    top: 20vh;
+    right: 8vh;
+    top: 10vh;
     width: 30vh;
     height: 100vh;
     overflow: auto;
@@ -131,7 +131,7 @@ footer img{
     flex-wrap: wrap;
     position: relative;
     left: 40px;
-    color: white;
+    color: black;
 }
 
 .flex-container div {
@@ -160,9 +160,26 @@ footer img{
     position: relative;
     color: white;
     width: 30vh;
-    bottom: 17vh;
+    bottom: 3vh;
     left: 0.5vh;
 }
+
+.img-container {
+    width: 82.5%;
+    height: auto;
+    overflow: no-display;
+}
+
+.img-container img {
+
+    max-width: 33%;
+    max-height: 33%;
+}
+
+nav {
+    width: 82.2%;
+}
+
 
 @media only screen and (max-width: 1600px) {
     .flex-container {
@@ -175,6 +192,10 @@ footer img{
     }
     article{
         width: auto;
+    }
+
+    .img-container {
+        width: 100%;
     }
 }
 
