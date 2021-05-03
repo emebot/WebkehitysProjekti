@@ -1,16 +1,16 @@
 /*Tausta ja containerit ja muut yleiset*/
 body{
-    background: gray;
+    background: #00213D;
     font-family: Chivo, sans-serif;
 }
 #container{
     padding:10px;
-    background: #2f2f2f;
+    background: #2589BB;
     margin: 20px;
 }
 #footer-container{
     padding:10px;
-    background: #2f2f2f;
+    background: #2589BB;
     margin: 20px;
 }
 p{
@@ -33,7 +33,7 @@ header img{
 #menu{
     display: flex;
     flex-wrap: wrap;
-    background: #959595;
+    background: #88C8E7;
     list-style-type: none;
 }
 #menu li{
@@ -44,14 +44,17 @@ header img{
     color: black;
 }
 #menu a:hover{
+    /*Kun hiiri on menussa olevan linkin päällä linkin tekstin väristä tulee taustan vastaväri*/
     color: white;
     mix-blend-mode: difference;
 }
 #dropdown{
     display: none;
     position: absolute;
-    background-color: #8d8d8d;
+    background-color: #88C8E7;
     padding: 5px;
+    border-radius: 0 10px 10px;
+    border: #00213D 2px solid;
 }
 #dropdown-link:hover #dropdown{
     display: block;
@@ -59,7 +62,7 @@ header img{
 
 /*Article*/
 article{
-    background: #959595;
+    background: #88C8E7;
     padding: 20px;
     width: 80%;
 }
@@ -103,12 +106,15 @@ footer img{
     width: 175px;
     height: 250px;
 }
+#about-article{
+    width: auto;
+}
 
 /*Koodi sivut*/
 .taulukko, .taulukko td{
     border: 1px solid black;
     border-collapse: collapse;
-    background: #b7b7b7;
+    background: #EBEBEB;
 }
 .taulukko td{
     padding: 10px;
