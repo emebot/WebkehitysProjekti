@@ -81,15 +81,7 @@ article img{
     max-width: 60%;
     margin-right: 2vh;
 }
-@media only screen and (max-width: 1200px) {
-    .flex-article {
-        flex-wrap: wrap;
-    }
-    #videonvieressaolevateksti{
-        max-width: 100%;
-        width: auto;
-    }
-}
+
 /*Footer*/
 footer{
     display: flex;
@@ -203,6 +195,8 @@ div embed {
     width: 82.5%;
     height: auto;
     overflow: no-display;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .img-container img {
@@ -228,6 +222,9 @@ nav {
     article{
         width: auto;
     }
+    nav{
+        width: auto;
+    }
 
     article div p {
         max-width: 100%;
@@ -239,6 +236,15 @@ nav {
 
     .img-container {
         width: 100%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .flex-article {
+        flex-wrap: wrap;
+    }
+    #videonvieressaolevateksti{
+        max-width: 100%;
+        width: auto;
     }
 }
 
