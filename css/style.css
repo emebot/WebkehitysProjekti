@@ -96,8 +96,8 @@ footer img{
 
 /*Tietoja sivu*/
 .muotokuva{
-    width: 175px;
     height: 300px;
+    width: auto;
 }
 
 #about-article{
