@@ -73,7 +73,10 @@ article{
     display: flex;
     flex-wrap: nowrap;
 }
-
+#videonvieressaolevateksti{
+    width: 60%;
+    margin-right: 2vh;
+}
 
 /*Footer*/
 footer{
@@ -221,7 +224,7 @@ nav {
     }
 
     article div p {
-        max-width: 100%;
+        width: auto;
     }
 
     article div embed {
