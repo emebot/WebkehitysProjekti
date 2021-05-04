@@ -1,4 +1,5 @@
 //Easter egg
+//Soittaa Darude - Sandstorm kun hiirtä hoveraa hiekkamyrsky tekstin yläpuolella
 'use strict';
 
 const teksti = document.getElementById("sandstorm");
