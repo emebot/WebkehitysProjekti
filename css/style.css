@@ -117,8 +117,6 @@ footer img{
     padding: 10px;
 }
 
-
-
 div embed {
     max-width: 30%;
     height: auto;
@@ -139,6 +137,42 @@ div embed {
     margin-left: 20px;
 }
 
+/*Hakukartan ominaisuudet*/
+
+.hakukartta{
+    background: #88C8E7;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.hakujutut{
+
+    margin-left: 20px;
+}
+
+.kartta{
+    width: 600px;
+    height: 400px;
+}
+
+.hakukartta p{
+    margin: 20px;
+
+}
+
+.karttacontainer{
+    display: flex;
+
+}
+
+.map-container div{
+    margin: 20px;
+}
+
+.map-container p{
+    margin-right: 20px;
+}
 
 .flex-container {
     position: fixed;
@@ -216,6 +250,9 @@ nav {
     .flex-container p {
         width: 30vh;
     }
+    .hakukartta{
+        width: auto;
+    }
     article{
         width: auto;
     }
@@ -237,6 +274,13 @@ nav {
 }
 @media only screen and (max-width: 1200px) {
     .flex-article {
+        flex-wrap: wrap;
+    }
+    .kartta{
+        width: 100vh;
+        height: 65vh;
+    }
+    .karttacontainer{
         flex-wrap: wrap;
     }
     #videonvieressaolevateksti{

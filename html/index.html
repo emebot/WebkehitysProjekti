@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Pelikoodit</title>
+    <script src="../js/ApiScript.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Hieno nuoli tossa games painikkeen vieressä-->
 </head>
 <body>
@@ -57,6 +64,32 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/eeNUdrmOZhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </article>
+
+    <div class="hakukartta">
+        <p><strong>Hae kaupunki ja saa palautetta säästä! </strong></p>
+
+        <div class="hakujutut">
+            <input id="hakuteksti" type="text">
+            <button id="hakunappi" onclick="haeSaa()">Hae</button>
+        </div>
+
+        <div class="karttacontainer">
+
+                <div id="map-container" style="margin: 20px">
+                    <div class="kartta" id="map"></div>
+                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                            crossorigin=""></script>
+                    <script src="../js/Karttascripti.js"></script>
+                </div>
+
+            <div>
+                <p><strong>Tilanne:</strong></p>
+                <p id="tilanne">Hae sijainti!</p>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
