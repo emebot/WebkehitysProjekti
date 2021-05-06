@@ -63,33 +63,32 @@
             </div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/eeNUdrmOZhs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </article>
 
-    <div class="hakukartta">
-        <p><strong>Hae kaupunki ja saa palautetta säästä! </strong></p>
+
 
         <div class="hakujutut">
+            <p><strong>Hae kaupunki ja saa palautetta säästä! </strong></p>
             <input id="hakuteksti" type="text">
             <button id="hakunappi" onclick="haeSaa()">Hae</button>
         </div>
 
-        <div class="karttacontainer">
+        <div class="flex-article">
 
-                <div id="map-container" style="margin: 20px">
-                    <div class="kartta" id="map"></div>
-                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-                            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-                            crossorigin=""></script>
-                    <script src="../js/Karttascripti.js"></script>
-                </div>
+            <div class="kartta" id="map" style="width: 600px; height: 400px;"></div>
+            <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+                    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+                    crossorigin=""></script>
+            <script src="../js/Karttascripti.js"></script>
 
-            <div>
+
+            <div class="tilanneText">
                 <p><strong>Tilanne:</strong></p>
                 <p id="tilanne">Hae sijainti!</p>
             </div>
         </div>
 
-    </div>
+    </article>
+
 </div>
 
 

@@ -139,30 +139,25 @@ div embed {
 
 /*Hakukartan ominaisuudet*/
 
-.hakukartta{
-    background: #88C8E7;
-    width: 80%;
-    margin-top: 20px;
-    padding: 20px;
+
+.kartta{
 }
 
 .hakujutut{
 
-    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
-.kartta{
-    width: 600px;
-    height: 400px;
-}
-
-.hakukartta p{
+.tilanneText{
     margin: 20px;
-
 }
+
+
 
 .karttacontainer{
     display: flex;
+    width: inherit;
 
 }
 
@@ -243,16 +238,13 @@ nav {
 
 @media only screen and (max-width: 1600px) {
     .flex-container {
-        position: static;
-        width: 1000px;
+        display: none;
     }
 
     .flex-container p {
         width: 30vh;
     }
-    .hakukartta{
-        width: auto;
-    }
+
     article{
         width: auto;
     }
@@ -271,18 +263,16 @@ nav {
     .img-container {
         width: 100%;
     }
+
+    .map-container {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 1200px) {
     .flex-article {
         flex-wrap: wrap;
     }
-    .kartta{
-        width: 100vh;
-        height: 65vh;
-    }
-    .karttacontainer{
-        flex-wrap: wrap;
-    }
+
     #videonvieressaolevateksti{
         max-width: 100%;
         width: auto;
